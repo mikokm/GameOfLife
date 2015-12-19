@@ -56,7 +56,7 @@ Game.prototype.start = function () {
     this.interval = window.setInterval(function () {
         this.grid = logic.update(this.grid);
         this.draw();
-    }.bind(this), 1000);
+    }.bind(this), 500);
 };
 
 Game.prototype.stop = function () {
